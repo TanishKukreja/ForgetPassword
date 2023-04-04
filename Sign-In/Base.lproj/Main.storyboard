@@ -41,7 +41,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="signButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KT0-kx-Bfc"/>
-                                    <segue destination="cfL-8P-Q2b" kind="show" identifier="segue1" id="9kk-K5-5wr"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email or Phone" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8Jw-3I-hV4">
@@ -59,7 +58,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Forget password?"/>
                                 <connections>
-                                    <segue destination="ACh-ah-dOI" kind="show" id="Wqe-a6-wOX"/>
+                                    <segue destination="ACh-ah-dOI" kind="show" identifier="forgetPassword" id="mTW-mp-vl9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -86,28 +85,32 @@
                     <connections>
                         <outlet property="Email" destination="8Jw-3I-hV4" id="MFp-M9-mzl"/>
                         <outlet property="Password" destination="qEd-z2-pIz" id="npA-dy-ZNQ"/>
+                        <outlet property="forgetPassword" destination="G5e-T2-lho" id="yhC-rt-r0m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="148.85496183206106" y="-8.4507042253521139"/>
+            <point key="canvasLocation" x="-42" y="-113"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ibm-Cq-sbP">
             <objects>
-                <viewController id="cfL-8P-Q2b" sceneMemberID="viewController">
+                <viewController id="cfL-8P-Q2b" customClass="ViewController" customModule="Sign_In" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ISa-Xs-KO0">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egK-cF-0Wk">
-                                <rect key="frame" x="16" y="95" width="134" height="49"/>
+                                <rect key="frame" x="16" y="95" width="134" height="84"/>
                                 <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="28"/>
                                 <color key="textColor" systemColor="tintColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viratkohli" translatesAutoresizingMaskIntoConstraints="NO" id="oq9-Zz-1hn">
+                                <rect key="frame" x="69" y="321" width="240" height="163"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi Tanish" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySY-mh-CP4">
-                                <rect key="frame" x="37" y="160" width="96" height="45"/>
+                                <rect key="frame" x="39" y="163" width="96" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="FfC-LX-7tH"/>
                                 </constraints>
@@ -115,19 +118,16 @@
                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viratkohli" translatesAutoresizingMaskIntoConstraints="NO" id="oq9-Zz-1hn">
-                                <rect key="frame" x="69" y="321" width="240" height="128"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B8s-Du-kh7"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="B8s-Du-kh7" firstAttribute="bottom" secondItem="egK-cF-0Wk" secondAttribute="bottom" constant="639" id="1DG-EO-LIO"/>
-                            <constraint firstItem="B8s-Du-kh7" firstAttribute="trailing" secondItem="ySY-mh-CP4" secondAttribute="trailing" constant="260" id="QGJ-kF-I8x"/>
+                            <constraint firstItem="B8s-Du-kh7" firstAttribute="trailing" secondItem="ySY-mh-CP4" secondAttribute="trailing" constant="258" id="QGJ-kF-I8x"/>
                             <constraint firstItem="B8s-Du-kh7" firstAttribute="trailing" secondItem="egK-cF-0Wk" secondAttribute="trailing" constant="243" id="Thf-W9-oO4"/>
-                            <constraint firstItem="oq9-Zz-1hn" firstAttribute="top" secondItem="ySY-mh-CP4" secondAttribute="bottom" constant="116" id="XEB-2R-zfm"/>
-                            <constraint firstItem="ySY-mh-CP4" firstAttribute="leading" secondItem="B8s-Du-kh7" secondAttribute="leading" constant="37" id="aOT-Qe-7HU"/>
-                            <constraint firstItem="ySY-mh-CP4" firstAttribute="top" secondItem="B8s-Du-kh7" secondAttribute="top" constant="101" id="bno-pt-0Jc"/>
+                            <constraint firstItem="oq9-Zz-1hn" firstAttribute="top" secondItem="ySY-mh-CP4" secondAttribute="bottom" constant="113" id="XEB-2R-zfm"/>
+                            <constraint firstItem="ySY-mh-CP4" firstAttribute="leading" secondItem="B8s-Du-kh7" secondAttribute="leading" constant="39" id="aOT-Qe-7HU"/>
+                            <constraint firstItem="ySY-mh-CP4" firstAttribute="top" secondItem="B8s-Du-kh7" secondAttribute="top" constant="104" id="bno-pt-0Jc"/>
                             <constraint firstItem="B8s-Du-kh7" firstAttribute="bottom" secondItem="oq9-Zz-1hn" secondAttribute="bottom" constant="334" id="c2p-RZ-fqx"/>
                             <constraint firstItem="egK-cF-0Wk" firstAttribute="leading" secondItem="B8s-Du-kh7" secondAttribute="leading" constant="16" id="cIz-s3-bBT"/>
                             <constraint firstItem="egK-cF-0Wk" firstAttribute="top" secondItem="B8s-Du-kh7" secondAttribute="top" constant="36" id="g7R-hR-KKl"/>
@@ -139,12 +139,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jjL-gp-mh1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956.48854961832058" y="-5.6338028169014089"/>
+            <point key="canvasLocation" x="909" y="-112"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="z0D-fm-Wos">
             <objects>
-                <viewController id="ACh-ah-dOI" sceneMemberID="viewController">
+                <viewController id="ACh-ah-dOI" customClass="ViewController" customModule="Sign_In" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yBT-en-PUJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,6 +192,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Continue">
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="forgetButton:" destination="ACh-ah-dOI" eventType="touchUpInside" id="jh4-ca-Bo7"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwW-P3-7fs">
                                 <rect key="frame" x="60" y="331" width="75" height="33"/>
@@ -221,10 +224,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VSo-zO-Vtg"/>
+                    <connections>
+                        <outlet property="forgetEmail" destination="Nsz-1n-Ywg" id="GBO-O3-kbO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeG-Fc-WoU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704.5801526717557" y="-1.4084507042253522"/>
+            <point key="canvasLocation" x="1799" y="-105"/>
         </scene>
     </scenes>
     <resources>

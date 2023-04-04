@@ -14,6 +14,7 @@
 		09304ED429D9712200D29B96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09304ED329D9712200D29B96 /* Assets.xcassets */; };
 		09304ED729D9712200D29B96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09304ED529D9712200D29B96 /* LaunchScreen.storyboard */; };
 		09304EDF29DAB09900D29B96 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09304EDE29DAB09900D29B96 /* HomeView.swift */; };
+		09304EE129DAF86300D29B96 /* ForgetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09304EE029DAF86300D29B96 /* ForgetPassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		09304ED629D9712200D29B96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09304ED829D9712200D29B96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09304EDE29DAB09900D29B96 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		09304EE029DAF86300D29B96 /* ForgetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				09304ECC29D9711E00D29B96 /* SceneDelegate.swift */,
 				09304ECE29D9711E00D29B96 /* ViewController.swift */,
 				09304ED029D9711E00D29B96 /* Main.storyboard */,
+				09304EE029DAF86300D29B96 /* ForgetPassword.swift */,
 				09304EDE29DAB09900D29B96 /* HomeView.swift */,
 				09304ED329D9712200D29B96 /* Assets.xcassets */,
 				09304ED529D9712200D29B96 /* LaunchScreen.storyboard */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09304ECF29D9711E00D29B96 /* ViewController.swift in Sources */,
+				09304EE129DAF86300D29B96 /* ForgetPassword.swift in Sources */,
 				09304EDF29DAB09900D29B96 /* HomeView.swift in Sources */,
 				09304ECB29D9711E00D29B96 /* AppDelegate.swift in Sources */,
 				09304ECD29D9711E00D29B96 /* SceneDelegate.swift in Sources */,
